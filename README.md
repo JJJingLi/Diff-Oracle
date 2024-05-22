@@ -6,11 +6,17 @@ The oracle-241 dataset is publicly available at [STSN](https://github.com/wm-bup
 
 Pseudo handprinted oracle character images can be generated via [CUT](https://github.com/taesungp/contrastive-unpaired-translation) by translating scanned data into handprinted data.
 
-An example of JSON files required in training, including prompts, target and source filenames, is presented below:
-![p](./github_page/json_example.png)
+Two JSON files: one is for training, and the other is for generation. 
+ - For training, JSON file includes prompts, target (i.e., content) and source (i.e., style) filenames, is presented below:
+![p](./github_page/json_example.JPG)
+ - For generation, JSON file includes prompts, labels, target (i.e., content) and source (i.e., style) filenames, is presented below:
+![p](./github_page/json_example_generation.JPG)
 
 ## Pretrain Model
 
+The pretrain model "control_sd15_ini.ckpt" can be generated at [ControlNet-Step 3](https://github.com/lllyasviel/ControlNet/blob/main/docs/train.md)
+
 ## Training
+
 
 ## Generation
